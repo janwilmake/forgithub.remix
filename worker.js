@@ -3,10 +3,7 @@ export default {
   fetch: async (request) => {
     const url = new URL(request.url);
     if (url.pathname === "/badge") {
-      return new Response(null, {
-        status: 302,
-        headers: { Location: `https://img.shields.io/badge/Remix_App-orange` },
-      });
+      return fetch(`https://img.shields.io/badge/Remix_App-orange`);
     }
     const [owner, repo, page, branch, ...pathParts] = url.pathname
       .slice(1)
