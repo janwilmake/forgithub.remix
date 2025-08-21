@@ -4,7 +4,7 @@ export default {
     const url = new URL(request.url);
     if (url.pathname === "/badge") {
       return new Response(null, {
-        stauts: 302,
+        status: 302,
         headers: { Location: `https://img.shields.io/badge/Remix_App-orange` },
       });
     }
