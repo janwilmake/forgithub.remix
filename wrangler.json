@@ -2,6 +2,7 @@
   "$schema": "https://unpkg.com/wrangler@latest/config-schema.json",
   "name": "forgithub-remix",
   "main": "worker.js",
+  "assets": { "directory": "./" },
   "compatibility_date": "2025-08-12",
   "dev": { "port": 3000 },
   "observability": { "logs": { "enabled": true } },
